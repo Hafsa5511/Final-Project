@@ -1,50 +1,204 @@
 <!DOCTYPE html>
 
 <html lang="en-CA">
-  
+
   <head>
-  <title>Final Project</title>
-  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+
+    <title>Final Project</title>
+
     <style>
-      
-
       body {
-      margin: 0;
-      padding: 0;
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px; 
-    }
-      
-      
-    
-    </style>
-  
-    
-    
-  </head>
-  
-  
-  <body>
-  <div style="background-color: #5c1a1a; padding: 60px 0; width: 100%;">
+        margin: 0;
+        padding: 0;
+      }
 
-    <div class="container">
-      <h1 style="color: white; font-family: 'Brush Script MT', cursive; font-size: 48px; margin: 0 0 20px 0;">ONE PIECE</h1>
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header section with logo and nav */
+      .header {
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .logo {
+        max-width: 150px;
+        margin-bottom: 20px;
+        margin-top: 40px
+      }
+
+      /* Navigation */
+      nav {
+
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        font-family: "Playpen Sans", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+      }
+
+
+      /* Banner section */
+      .banner {
+        background-color: rgba(72, 0, 0, 1);
+        padding: 60px 0;
+        width: 100%;
+        position: relative;
+      }
+
+      .banner h1 {
+        color: white;
+        margin: 0 0 20px 0;
+        font-family: "Protest Revolution", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+      }
+
+      .banner p {
+        color: white;
+        font-family: "Playpen Sans", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 60px;
+      }
+
+
+      p {
+        font-family: "Playpen Sans",  cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+
+      }
+
+      .boat-image {
+        position: absolute;
+        right: 70px;
+        bottom: -150px;
+        max-width: 400px;
+        z-index: 10;
+      }
+
+      .below-banner {
+        margin-top: 230px;
+      }
+
+      .sword-image {
+        position: absolute;
+        right: 20px;
+        bottom: -920px;
+        max-width: 1400px;
+        z-index: 10;
+        opacity: 30%
+      }
+
+      .roger-image {
+        position: absolute;
+        right: 70px;
+        bottom: -1400px;
+        max-width: 400px;
+        z-index: 15;
+
+      }
       
-      <p style="color: white; font-family: Arial, sans-serif; font-size: 18px; line-height: 1.6;">
-        A story of freedom chased across an endless sea,<br>
-        a tale of dreams carried by those brave enough to seek them.
-      </p>
+      .roger-text {
+  position: absolute;
+  left: 150px;
+  bottom: -1400px;
+  max-width: 600px;
+  line-height: 2;
+  
+}
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <div>
+      <nav>
+        <a href="#crew">THE CREW</a>
+        <a href="#luffy">LUFFY</a>
+        <a href="#devil-fruits">DEVIL FRUITS</a>
+      </nav>
     </div>
-  </div>
+
+
+    <div class="container header">
+      <img src="skull.png" alt="One Piece Logo" class="logo">
+    </div>
+
+    <!-- Dark Red Banner -->
+    <div class="banner">
+
+      <div class="container">
+        <h1>One Piece</h1>
+
+        <p>
+          A story of freedom chased across an endless sea,<br>
+          a tale of dreams carried by those brave enough to seek them.</p>
+
+      </div>
+    </div>
+
+    <!-- Rest of your content -->
+    <div class="container">
+
+      <div class="container below-banner">
+        <p>a world where the weight of history rests in the hearts of pirates.</p>
+      </div>
+
+      <img src="banner1.png" alt="Boat" class="boat-image">
+
+    </div>
+
+
+
+    <img src="roger.png" alt="king" class="roger-image">
+
+
+    <img src="swords.png" alt="swords" class="sword-image">
+
+
+<div class="roger-text">
   
-  <div class="container">
-    <p>Your regular content here stays within 1200px...</p>
-  </div>
   
-  
+    <p>
+      Wealth, fame, power...  Gold Roger, the King of the Pirates, obtained this and everything else the world had to offer and his dying words drove countless souls to the seas.
+    </p>
+
+      <p>  
+   "You want my treasure?  You can have it!  I left everything I gathered together in one place!  Now you just have to find it!" </p>
+
+      <p>
+        These words lured men to the Grand Line.  In pursuit of dreams greater than they've ever dared to imagine! </p>
+
+      <p> This is the time known as the 'Great Pirate Era'!
+    </p>
+    </div>
+
   </body>
 </html>
