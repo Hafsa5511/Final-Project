@@ -24,7 +24,7 @@
         margin: 0;
         padding: 0;
         position: relative;
-        min-height: 2500px;
+        min-height: 5000px;
       }
 
       .page-wrapper {
@@ -48,7 +48,8 @@
       .logo {
         max-width: 180px;
         margin-bottom: 20px;
-        margin-top: 40px
+        margin-top: 40px;
+        animation: float 2s ease-in-out infinite;
       }
 
       /* Navigation */
@@ -57,7 +58,7 @@
         display: flex;
         justify-content: center;
         gap: 100px;
-        font-family: "Playpen Sans",  cursive;
+        font-family: "Playpen Sans", cursive;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
@@ -77,6 +78,10 @@
         padding: 60px 0;
         width: 100%;
         position: relative;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 0.2s;
+
       }
 
       .banner h1 {
@@ -85,7 +90,18 @@
         font-family: "Protest Revolution", sans-serif;
         font-weight: 400;
         font-style: normal;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+      }
 
+      h2 {
+        color: rgba(72, 0, 0, 1);
+        margin: 0 0 20px 0;
+        font-family: "Protest Revolution", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
       }
 
       .banner p {
@@ -96,6 +112,8 @@
         font-style: normal;
         line-height: 60px;
         font-size: 20px;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
       }
 
 
@@ -105,7 +123,8 @@
         font-weight: 500;
         font-style: normal;
         font-size: 20px;
-
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
       }
 
       .boat-image {
@@ -114,10 +133,14 @@
         bottom: -250px;
         max-width: 400px;
         z-index: 10;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 0.4s;
       }
 
       .below-banner {
         margin-top: 230px;
+        animation-delay: 0.6s;
       }
 
       .sword-image {
@@ -135,6 +158,9 @@
         bottom: -1500px;
         max-width: 400px;
         z-index: 15;
+        opacity: 0;
+        animation-delay: 1s;
+        animation: fadeIn 1s ease-out forwards;
       }
 
       .roger-text {
@@ -143,6 +169,18 @@
         bottom: -1480px;
         max-width: 600px;
         line-height: 40px;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+      }
+
+      .summary-text {
+        position: absolute;
+        left: 0;
+        bottom: -4500px;
+        max-width: 600px;
+        line-height: 40px;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
       }
 
       .map-image {
@@ -151,6 +189,9 @@
         bottom: -2300px;
         max-width: 530px;
         z-index: 15;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 1.5s;
       }
 
       .c1-image {
@@ -159,30 +200,79 @@
         bottom: -2940px;
         max-width: 530px;
         z-index: 15;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 1.5s;
       }
-      
+
       .star-image {
         position: absolute;
         right: 300px;
         bottom: -2465px;
         max-width: 290px;
         z-index: 15;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 1.5s;
       }
-      
+
       .poster-image {
         position: absolute;
         right: 300px;
         bottom: -2940px;
         max-width: 290px;
         z-index: 15;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 1.5s;
       }
-      
+
       .ship-image {
         position: absolute;
         right: 300px;
         bottom: -3350px;
         max-width: 845px;
         z-index: 15;
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 2s;
+      }
+
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes float {
+
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      
+      
+      .joyboy-image {
+        position: absolute;
+        right: -600px;
+        bottom: 100px;
+        max-width: 900px;
+        z-index: 15;
+        opacity: 0;
+        animation-delay: 1s;
+        animation: fadeIn 1s ease-out forwards;
       }
       
     </style>
@@ -256,16 +346,42 @@
       <img src="map.png" alt="king" class="map-image">
 
       <img src="c1.png" alt="king" class="c1-image">
-      
+
       <img src="star.png" alt="king" class="star-image">
-      
+
       <img src="poster.png" alt="king" class="poster-image">
-      
-       <img src="ship.png" alt="king" class="ship-image">
+
+      <img src="ship.png" alt="king" class="ship-image">
+
+
+      <div class="container" style="position: relative;">
+        <div class="summary-text">
 
 
 
+          <h2>
+            Summary
+          </h2>
+          <p>
+            One Piece follows Monkey D. Luffy and his crew as they sail across a vast, unpredictable world in search of the legendary treasure known as the One Piece. On the surface, it’s an adventure about pirates, friendship, and chasing impossible dreams.</p>
 
+          <br>
+          <p>but beneath that, the story explores deep political and social themes.
+            The world of One Piece reflects real global issues: corrupt governments that hide truth, the rewriting of history to control populations, social inequality, racism, slavery, environmental destruction, and the abuse of power by military and political elites.</p>
+
+          <br>
+          <p>Through its islands and arcs, the series critiques censorship, colonialism, discrimination, and the consequences of war, while celebrating resistance, freedom, and the right to live without oppression.</p>
+
+
+          <br>
+          <p>At its core, One Piece is about finding the courage to challenge unjust systems and pursue a world where everyone is free.</p>
+          
+          
+           <img src="joyboy.png" alt="king" class="joyboy-image">
+          
+          
+        </div>
+      </div>
 
 
     </div>
