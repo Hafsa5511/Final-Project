@@ -133,10 +133,9 @@
         z-index: 15;
       }
 
-     .roger-text {
+      .roger-text {
   position: absolute;
-  left: 50%; /* Start at center */
-  transform: translateX(-700px); /* Then shift left by half its position */
+  left: 0; /* Now it's relative to the container, not the page */
   bottom: -1500px;
   max-width: 600px;
   line-height: 40px;
@@ -199,20 +198,18 @@
     <img src="swords.png" alt="swords" class="sword-image">
 
 
-    <div class="roger-text">
-
-
-      <p>
-        Wealth, fame, power...  Gold Roger, the King of the Pirates, obtained this and everything else the world had to offer and his dying words drove countless souls to the seas.
-      </p> <br>
-
-      <p>
-        "You want my treasure?  You can have it!  I left everything I gathered together in one place!  Now you just have to find it!" </p><br>
-
-      <p><br>
-        These words lured men to the Grand Line.  In pursuit of dreams greater than they've ever dared to imagine! This is the time known as the 'Great Pirate Era'!
-      </p>
+    <div class="container" style="position: relative;">
+  <div class="roger-text">
+    <p>
+      Wealth, fame, power...  Gold Roger, the King of the Pirates, obtained this and everything else the world had to offer and his dying words drove countless souls to the seas.
+    </p> <br>
+    <p>
+      "You want my treasure?  You can have it!  I left everything I gathered together in one place!  Now you just have to find it!" </p><br>
+    <p><br>
+      These words lured men to the Grand Line.  In pursuit of dreams greater than they've ever dared to imagine! This is the time known as the 'Great Pirate Era'!
+    </p>
+  </div>
+</div>
     </div>
- </div>
   </body>
 </html>
