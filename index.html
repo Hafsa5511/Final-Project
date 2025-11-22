@@ -25,14 +25,12 @@
 
       .page-wrapper {
         width: 1440px;
-        /* Total design width */
         margin: 0 auto;
         position: relative;
       }
 
       .container {
         width: 1200px;
-        /* Fixed 1200px, not max-width */
         margin: 0 auto;
         padding: 0;
       }
@@ -106,8 +104,7 @@
       .boat-image {
         position: absolute;
         right: 120px;
-        /* Relative to the wrapper now */
-        bottom: -150px;
+        bottom: -250px;
         max-width: 400px;
         z-index: 10;
       }
@@ -134,12 +131,12 @@
       }
 
       .roger-text {
-  position: absolute;
-  left: 0; /* Now it's relative to the container, not the page */
-  bottom: -1500px;
-  max-width: 600px;
-  line-height: 40px;
-}
+        position: absolute;
+        left: 0;
+        bottom: -1500px;
+        max-width: 600px;
+        line-height: 40px;
+      }
     </style>
 
   </head>
@@ -158,58 +155,59 @@
         </nav>
       </div>
 
-     
 
-   
+      <div class="container header">
+        <img src="skull.png" alt="One Piece Logo" class="logo">
+      </div>
 
-    <div class="container header">
-      <img src="skull.png" alt="One Piece Logo" class="logo">
-    </div>
+  
+      <div class="banner">
 
-    <!-- Dark Red Banner -->
-    <div class="banner">
+        <div class="container">
+          <h1>One Piece</h1>
 
+          <p>
+            A story of freedom chased across an endless sea,<br>
+            a tale of dreams carried by those brave enough to seek them.</p>
+
+        </div>
+      </div>
+      
       <div class="container">
-        <h1>One Piece</h1>
 
-        <p>
-          A story of freedom chased across an endless sea,<br>
-          a tale of dreams carried by those brave enough to seek them.</p>
+        <div class="container below-banner">
+          <p>a world where the weight of history rests in the hearts of pirates.</p>
+        </div>
+
+        <img src="banner1.png" alt="Boat" class="boat-image">
 
       </div>
-    </div>
 
-    <!-- Rest of your content -->
-    <div class="container">
 
-      <div class="container below-banner">
-        <p>a world where the weight of history rests in the hearts of pirates.</p>
+
+      <img src="roger.png" alt="king" class="roger-image">
+
+
+      <img src="swords.png" alt="swords" class="sword-image">
+
+
+      <div class="container" style="position: relative;">
+        <div class="roger-text">
+         
+          <p>
+            Wealth, fame, power... Gold Roger, the King of the Pirates, obtained this and everything else the world had to offer and his dying words drove countless souls to the seas.
+          </p> <br>
+          <p>
+            "You want my treasure? You can have it! I left everything I gathered together in one place! Now you just have to find it!" </p><br>
+          <p><br>
+            These words lured men to the Grand Line. In pursuit of dreams greater than they've ever dared to imagine! This is the time known as the 'Great Pirate Era'!
+          </p>
+        </div>
       </div>
-
-      <img src="banner1.png" alt="Boat" class="boat-image">
-
-    </div>
-
-
-
-    <img src="roger.png" alt="king" class="roger-image">
-
-
-    <img src="swords.png" alt="swords" class="sword-image">
-
-
-    <div class="container" style="position: relative;">
-  <div class="roger-text">
-    <p>
-      Wealth, fame, power...  Gold Roger, the King of the Pirates, obtained this and everything else the world had to offer and his dying words drove countless souls to the seas.
-    </p> <br>
-    <p>
-      "You want my treasure?  You can have it!  I left everything I gathered together in one place!  Now you just have to find it!" </p><br>
-    <p><br>
-      These words lured men to the Grand Line.  In pursuit of dreams greater than they've ever dared to imagine! This is the time known as the 'Great Pirate Era'!
-    </p>
-  </div>
-</div>
+     
+      
+      
+      
     </div>
   </body>
 </html>
