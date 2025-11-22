@@ -19,12 +19,22 @@
       body {
         margin: 0;
         padding: 0;
+        position: relative;
+        min-height: 2500px;
+      }
+
+      .page-wrapper {
+        width: 1440px;
+        /* Total design width */
+        margin: 0 auto;
+        position: relative;
       }
 
       .container {
-        max-width: 1200px;
+        width: 1200px;
+        /* Fixed 1200px, not max-width */
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 0;
       }
 
       /* Header section with logo and nav */
@@ -86,7 +96,7 @@
 
 
       p {
-        font-family: "Playpen Sans",  cursive;
+        font-family: "Playpen Sans", cursive;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
@@ -95,7 +105,8 @@
 
       .boat-image {
         position: absolute;
-        right: 100px;
+        right: 120px;
+        /* Relative to the wrapper now */
         bottom: -150px;
         max-width: 400px;
         z-index: 10;
@@ -107,31 +118,29 @@
 
       .sword-image {
         position: absolute;
-        right: 50px;
+        right: 120px;
         bottom: -920px;
-        max-width: 1400px;
+        max-width: 1200px;
         z-index: 10;
         opacity: 15%
       }
 
       .roger-image {
         position: absolute;
-        right: 100px;
+        right: 120px;
         bottom: -1500px;
         max-width: 400px;
         z-index: 15;
-
       }
-      
-      .roger-text {
-  position: absolute;
-  
-  bottom: -1500px;
-  max-width: 600px;
-  line-height: 40px;
 
-  
-}
+      .roger-text {
+        position: absolute;
+        left: 120px;
+        /* Add left position */
+        bottom: -1500px;
+        max-width: 600px;
+        line-height: 40px;
+      }
     </style>
 
   </head>
@@ -139,14 +148,20 @@
 
   <body>
 
-    <div>
-      <nav>
-        <a href="#crew">THE CREW</a>
-        <a href="#luffy">LUFFY</a>
-        <a href="#devil-fruits">DEVIL FRUITS</a>
-      </nav>
-    </div>
 
+    <div class="page-wrapper">
+
+      <div>
+        <nav>
+          <a href="#crew">THE CREW</a>
+          <a href="#luffy">LUFFY</a>
+          <a href="#devil-fruits">DEVIL FRUITS</a>
+        </nav>
+      </div>
+
+     
+
+   
 
     <div class="container header">
       <img src="skull.png" alt="One Piece Logo" class="logo">
@@ -184,20 +199,20 @@
     <img src="swords.png" alt="swords" class="sword-image">
 
 
-<div class="roger-text">
-  
-  
-    <p>
-      Wealth, fame, power...  Gold Roger, the King of the Pirates, obtained this and everything else the world had to offer and his dying words drove countless souls to the seas.
-    </p> <br>
+    <div class="roger-text">
 
-      <p>  
-   "You want my treasure?  You can have it!  I left everything I gathered together in one place!  Now you just have to find it!" </p><br>
+
+      <p>
+        Wealth, fame, power...  Gold Roger, the King of the Pirates, obtained this and everything else the world had to offer and his dying words drove countless souls to the seas.
+      </p> <br>
+
+      <p>
+        "You want my treasure?  You can have it!  I left everything I gathered together in one place!  Now you just have to find it!" </p><br>
 
       <p><br>
         These words lured men to the Grand Line.  In pursuit of dreams greater than they've ever dared to imagine! This is the time known as the 'Great Pirate Era'!
-    </p>
+      </p>
     </div>
-
+ </div>
   </body>
 </html>
