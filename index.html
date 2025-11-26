@@ -60,6 +60,7 @@
         margin-bottom: 20px;
         margin-top: 40px;
         animation: float 3s ease-in-out infinite;
+        
 
       
       }
@@ -154,7 +155,7 @@
         bottom: -920px;
         max-width: 1200px;
         z-index: 10;
-        opacity: 15%
+        opacity: 15% 
       }
 
       .roger-image {
@@ -242,9 +243,20 @@
         bottom: 100px;
         max-width: 900px;
         z-index: 15;
+        animation: glow 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3));
         
         
       }
+      
+      @keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3));
+  }
+  70% {
+    filter: drop-shadow(0 0 40px rgba(255, 215, 0, 0.6));
+  }
+}
 
       .wave-banner {
         position: absolute;
@@ -366,7 +378,7 @@
 
 
           <img src="joyboy.png" alt="king" class="joyboy-image">
-
+ 
 
         </div>
       </div>
@@ -377,7 +389,7 @@
     
     <script>
       // Fade in elements on scroll
-      const fadeElements = document.querySelectorAll('.banner, .below-banner, .boat-image, .roger-image, .sword-image, .roger-text, .map-image, .c1-image, .star-image, .poster-image, .ship-image, .summary-text, .joyboy-image, .wave-banner');
+      const fadeElements = document.querySelectorAll('.banner, .below-banner, .boat-image, .roger-image, .roger-text, .map-image, .c1-image, .star-image, .poster-image, .ship-image, .summary-text, .joyboy-image, .wave-banner');
 
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
