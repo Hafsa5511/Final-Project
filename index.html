@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
 
-    <title>Final Project</title>
+    <title>Home</title>
 
     <style>
       body {
@@ -44,25 +44,28 @@
         text-align: center;
         padding: 20px 0;
       }
-      
-      
+
+
       @keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
- 
+
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
       .logo {
         max-width: 180px;
         margin-bottom: 20px;
         margin-top: 40px;
         animation: float 3s ease-in-out infinite;
-        
 
-      
+
+
       }
 
       /* Navigation */
@@ -91,7 +94,7 @@
         padding: 60px 0;
         width: 100%;
         position: relative;
-      
+
 
       }
 
@@ -101,7 +104,7 @@
         font-family: "Protest Revolution", sans-serif;
         font-weight: 400;
         font-style: normal;
-     
+
       }
 
       h2 {
@@ -110,7 +113,7 @@
         font-family: "Protest Revolution", sans-serif;
         font-weight: 400;
         font-style: normal;
-       
+
       }
 
       .banner p {
@@ -121,7 +124,7 @@
         font-style: normal;
         line-height: 60px;
         font-size: 20px;
-       
+
       }
 
 
@@ -131,7 +134,7 @@
         font-weight: 500;
         font-style: normal;
         font-size: 20px;
-      
+
       }
 
       .boat-image {
@@ -140,13 +143,13 @@
         bottom: -250px;
         max-width: 400px;
         z-index: 10;
-        
-       
+
+
       }
 
       .below-banner {
         margin-top: 230px;
-        
+
       }
 
       .sword-image {
@@ -155,7 +158,7 @@
         bottom: -920px;
         max-width: 1200px;
         z-index: 10;
-        opacity: 15% 
+        opacity: 15%
       }
 
       .roger-image {
@@ -165,7 +168,7 @@
         max-width: 400px;
         z-index: 15;
 
-        
+
       }
 
       .roger-text {
@@ -174,7 +177,7 @@
         bottom: -1480px;
         max-width: 600px;
         line-height: 40px;
-       
+
       }
 
       .summary-text {
@@ -183,7 +186,7 @@
         bottom: -4500px;
         max-width: 600px;
         line-height: 40px;
-        
+
       }
 
       .map-image {
@@ -192,8 +195,8 @@
         bottom: -2300px;
         max-width: 530px;
         z-index: 15;
-        
-       
+
+
       }
 
       .c1-image {
@@ -202,8 +205,8 @@
         bottom: -2940px;
         max-width: 530px;
         z-index: 15;
-       
-        
+
+
       }
 
       .star-image {
@@ -212,8 +215,8 @@
         bottom: -2465px;
         max-width: 290px;
         z-index: 15;
-        
-        
+
+
       }
 
       .poster-image {
@@ -222,8 +225,8 @@
         bottom: -2940px;
         max-width: 290px;
         z-index: 15;
-        
-       
+
+
       }
 
       .ship-image {
@@ -232,8 +235,8 @@
         bottom: -3350px;
         max-width: 845px;
         z-index: 15;
-        
-        
+
+
       }
 
 
@@ -244,19 +247,22 @@
         max-width: 900px;
         z-index: 15;
         animation: glow 3s ease-in-out infinite;
-  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3));
-        
-        
+        filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3));
+
+
       }
-      
+
       @keyframes glow {
-  0%, 100% {
-    filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3));
-  }
-  70% {
-    filter: drop-shadow(0 0 40px rgba(255, 215, 0, 0.6));
-  }
-}
+
+        0%,
+        100% {
+          filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3));
+        }
+
+        70% {
+          filter: drop-shadow(0 0 40px rgba(255, 215, 0, 0.6));
+        }
+      }
 
       .wave-banner {
         position: absolute;
@@ -264,8 +270,8 @@
         left: 0;
         width: 100%;
         padding: 0;
-      
-       
+
+
       }
 
       .wave-banner img {
@@ -378,7 +384,7 @@
 
 
           <img src="joyboy.png" alt="king" class="joyboy-image">
- 
+
 
         </div>
       </div>
@@ -386,7 +392,7 @@
         <img src="water.png" alt="ocean waves">
       </div>
     </div>
-    
+
     <script>
       // Fade in elements on scroll
       const fadeElements = document.querySelectorAll('.banner, .below-banner, .boat-image, .roger-image, .roger-text, .map-image, .c1-image, .star-image, .poster-image, .ship-image, .summary-text, .joyboy-image, .wave-banner');
@@ -409,6 +415,6 @@
         observer.observe(el);
       });
     </script>
-    
+
   </body>
 </html>
